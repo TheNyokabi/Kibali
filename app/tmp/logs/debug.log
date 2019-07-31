@@ -1,0 +1,199 @@
+2018-03-30 10:43:19 Notice: Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+2018-03-30 10:43:24 Notice: Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+2018-03-30 10:44:45 Debug: Dashboard: Structure Synchronization (without reset) took 16.35744 seconds, during which it made 0x queries on the DB.
+2018-03-30 10:44:54 Debug: Dashboard: Values Recalculation took 9.10537 seconds, during which it made 0x queries on the DB.
+2018-03-30 10:51:05 Notice: Notice (1024): Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/Config/bootstrap.php, line 298
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 98
+include - CORE/Cake/bootstrap.php, line 439
+[main] - APP/webroot/index.php, line 92
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' in [/var/www/demo.eramba.org/eramba_community/app/Controller/Component/NewsComponent.php, line 24]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+NewsComponent::initialize() - APP/Controller/Component/NewsComponent.php, line 24
+ObjectCollection::trigger() - CORE/Cake/Utility/ObjectCollection.php, line 128
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 677
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 189
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' in [/var/www/demo.eramba.org/eramba_community/app/Controller/Component/NewsComponent.php, line 24]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+NewsComponent::initialize() - APP/Controller/Component/NewsComponent.php, line 24
+ObjectCollection::trigger() - CORE/Cake/Utility/ObjectCollection.php, line 128
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 677
+ExceptionRenderer::_getController() - CORE/Cake/Error/ExceptionRenderer.php, line 158
+ExceptionRenderer::__construct() - CORE/Cake/Error/ExceptionRenderer.php, line 95
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 126
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant DB_SCHEMA_VERSION - assumed 'DB_SCHEMA_VERSION' in [/var/www/demo.eramba.org/eramba_community/app/View/Elements/core/errorMessage.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/core/errorMessage.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Errors/error500.ctp, line 1
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 292
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 260
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Undefined variable: userJustLogged in [/var/www/demo.eramba.org/eramba_community/app/View/Layouts/default.ctp, line 169]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Layouts/default.ctp, line 169
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::renderLayout() - CORE/Cake/View/View.php, line 546
+View::render() - CORE/Cake/View/View.php, line 481
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 292
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 260
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant DB_SCHEMA_VERSION - assumed 'DB_SCHEMA_VERSION' in [/var/www/demo.eramba.org/eramba_community/app/View/Elements/core/errorMessage.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/core/errorMessage.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Errors/error500.ctp, line 1
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+ExceptionRenderer::_outputMessageSafe() - CORE/Cake/Error/ExceptionRenderer.php, line 328
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 309
+ExceptionRenderer::error500() - CORE/Cake/Error/ExceptionRenderer.php, line 260
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (1024): Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/Config/bootstrap.php, line 298
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 98
+include - CORE/Cake/bootstrap.php, line 439
+[main] - APP/webroot/index.php, line 92
+
+2018-03-30 10:51:05 Notice: Notice (1024): Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/Config/bootstrap.php, line 298
+Configure::bootstrap() - CORE/Cake/Core/Configure.php, line 98
+include - CORE/Cake/bootstrap.php, line 439
+[main] - APP/webroot/index.php, line 92
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' in [/var/www/demo.eramba.org/eramba_community/app/Controller/Component/NewsComponent.php, line 24]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+NewsComponent::initialize() - APP/Controller/Component/NewsComponent.php, line 24
+ObjectCollection::trigger() - CORE/Cake/Utility/ObjectCollection.php, line 128
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 677
+ExceptionRenderer::_getController() - CORE/Cake/Error/ExceptionRenderer.php, line 158
+ExceptionRenderer::__construct() - CORE/Cake/Error/ExceptionRenderer.php, line 95
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 126
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant CLIENT_ID - assumed 'CLIENT_ID' in [/var/www/demo.eramba.org/eramba_community/app/Controller/Component/NewsComponent.php, line 24]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+NewsComponent::initialize() - APP/Controller/Component/NewsComponent.php, line 24
+ObjectCollection::trigger() - CORE/Cake/Utility/ObjectCollection.php, line 128
+CakeEventManager::dispatch() - CORE/Cake/Event/CakeEventManager.php, line 243
+Controller::startupProcess() - CORE/Cake/Controller/Controller.php, line 677
+ExceptionRenderer::_getController() - CORE/Cake/Error/ExceptionRenderer.php, line 158
+ExceptionRenderer::__construct() - CORE/Cake/Error/ExceptionRenderer.php, line 95
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 126
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Undefined variable: userJustLogged in [/var/www/demo.eramba.org/eramba_community/app/View/Layouts/default.ctp, line 169]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Layouts/default.ctp, line 169
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::renderLayout() - CORE/Cake/View/View.php, line 546
+View::render() - CORE/Cake/View/View.php, line 481
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 292
+ExceptionRenderer::error400() - CORE/Cake/Error/ExceptionRenderer.php, line 236
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant DB_SCHEMA_VERSION - assumed 'DB_SCHEMA_VERSION' in [/var/www/demo.eramba.org/eramba_community/app/View/Elements/core/errorMessage.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/core/errorMessage.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Errors/error500.ctp, line 1
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+ExceptionRenderer::_outputMessageSafe() - CORE/Cake/Error/ExceptionRenderer.php, line 328
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 309
+ExceptionRenderer::error400() - CORE/Cake/Error/ExceptionRenderer.php, line 236
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Undefined variable: userJustLogged in [/var/www/demo.eramba.org/eramba_community/app/View/Layouts/default.ctp, line 169]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Layouts/default.ctp, line 169
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::renderLayout() - CORE/Cake/View/View.php, line 546
+View::render() - CORE/Cake/View/View.php, line 481
+Controller::render() - CORE/Cake/Controller/Controller.php, line 963
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 292
+ExceptionRenderer::error400() - CORE/Cake/Error/ExceptionRenderer.php, line 236
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:05 Notice: Notice (8): Use of undefined constant DB_SCHEMA_VERSION - assumed 'DB_SCHEMA_VERSION' in [/var/www/demo.eramba.org/eramba_community/app/View/Elements/core/errorMessage.ctp, line 11]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+include - APP/View/Elements/core/errorMessage.ctp, line 11
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::_renderElement() - CORE/Cake/View/View.php, line 1224
+View::element() - CORE/Cake/View/View.php, line 418
+include - APP/View/Errors/error500.ctp, line 1
+View::_evaluate() - CORE/Cake/View/View.php, line 971
+View::_render() - CORE/Cake/View/View.php, line 933
+View::render() - CORE/Cake/View/View.php, line 473
+ExceptionRenderer::_outputMessageSafe() - CORE/Cake/Error/ExceptionRenderer.php, line 328
+ExceptionRenderer::_outputMessage() - CORE/Cake/Error/ExceptionRenderer.php, line 309
+ExceptionRenderer::error400() - CORE/Cake/Error/ExceptionRenderer.php, line 236
+ExceptionRenderer::render() - CORE/Cake/Error/ExceptionRenderer.php, line 190
+ErrorHandler::handleException() - CORE/Cake/Error/ErrorHandler.php, line 127
+[main] - [internal], line ??
+
+2018-03-30 10:51:08 Notice: Currency configuration is invalid or not available. in [/var/www/demo.eramba.org/eramba_community/app/Config/bootstrap.php, line 298]
+2018-03-30 10:51:42 Debug: Dashboard: Structure Synchronization (without reset) took 2.31963 seconds, during which it made 0x queries on the DB.
+2018-03-30 10:51:43 Debug: Dashboard: Values Recalculation took 1.34694 seconds, during which it made 0x queries on the DB.

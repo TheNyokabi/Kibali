@@ -1,0 +1,642 @@
+2018-03-30 10:51:05 Error: [MissingTableException] Table oauth_connectors for model OauthConnector was not found in datasource default.
+Exception Attributes: array (
+  'table' => 'oauth_connectors',
+  'class' => 'OauthConnector',
+  'ds' => 'default',
+)
+Request URL: /security_policies?id=43
+Stack Trace:
+#0 /var/www/demo.eramba.org/eramba_community/lib/Cake/Model/Model.php(3667): Model->setSource('oauth_connector...')
+#1 /var/www/demo.eramba.org/eramba_community/lib/Cake/Model/Model.php(3038): Model->getDataSource()
+#2 /var/www/demo.eramba.org/eramba_community/lib/Cake/Model/Model.php(3010): Model->_readDataSource('first', Array)
+#3 /var/www/demo.eramba.org/eramba_community/app/Model/OauthConnector.php(162): Model->find('first', Array)
+#4 /var/www/demo.eramba.org/eramba_community/app/Controller/Component/OauthGoogleAuthComponent.php(32): OauthConnector->getActiveOauthData()
+#5 /var/www/demo.eramba.org/eramba_community/lib/Cake/Utility/ObjectCollection.php(128): OauthGoogleAuthComponent->initialize(Object(SecurityPoliciesController))
+#6 /var/www/demo.eramba.org/eramba_community/lib/Cake/Event/CakeEventManager.php(243): ObjectCollection->trigger('initialize')
+#7 /var/www/demo.eramba.org/eramba_community/lib/Cake/Controller/Controller.php(677): CakeEventManager->dispatch(Object(CakeEvent))
+#8 /var/www/demo.eramba.org/eramba_community/lib/Cake/Routing/Dispatcher.php(189): Controller->startupProcess()
+#9 /var/www/demo.eramba.org/eramba_community/lib/Cake/Routing/Dispatcher.php(167): Dispatcher->_invoke(Object(SecurityPoliciesController), Object(CakeRequest))
+#10 /var/www/demo.eramba.org/eramba_community/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#11 {main}
+2018-03-30 10:51:05 Error: [MissingControllerException] Controller class ImgController could not be found.
+Exception Attributes: array (
+  'class' => 'ImgController',
+  'plugin' => NULL,
+)
+Request URL: /img/cake.power.gif
+Stack Trace:
+#0 /var/www/demo.eramba.org/eramba_community/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-30 10:51:05 Error: [MissingControllerException] Controller class CssController could not be found.
+Exception Attributes: array (
+  'class' => 'CssController',
+  'plugin' => NULL,
+)
+Request URL: /css/cake.generic.css
+Stack Trace:
+#0 /var/www/demo.eramba.org/eramba_community/app/webroot/index.php(109): Dispatcher->dispatch(Object(CakeRequest), Object(CakeResponse))
+#1 {main}
+2018-03-30 10:55:15 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:15 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:17 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:17 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:17 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:17 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:18 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:18 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 10:55:18 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 10:55:18 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:27 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:27 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:27 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:27 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:43 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:43 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:43 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:43 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:45 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:45 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:45 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:45 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:42:57 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:00 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:00 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:00 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:00 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:01 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:01 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:01 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:01 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:16 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:16 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:16 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:16 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:17 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:17 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:17 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:17 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:23 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:23 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:23 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:23 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:25 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:25 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:25 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:25 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:29 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:29 Warning: Warning (512): _cake_core_ cache was unable to write 'file_map' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+App::shutdown() - CORE/Cake/Core/App.php, line 938
+[main] - [internal], line ??
+
+2018-03-30 11:43:29 Warning: Warning (512): SplFileInfo::openFile(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/splfileinfo.openfile'>splfileinfo.openfile</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Engine/FileEngine.php, line 360]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+FileEngine::_setKey() - CORE/Cake/Cache/Engine/FileEngine.php, line 360
+FileEngine::write() - CORE/Cake/Cache/Engine/FileEngine.php, line 116
+Cache::write() - CORE/Cake/Cache/Cache.php, line 317
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:29 Warning: Warning (512): _cake_core_ cache was unable to write 'method_cache' to File cache in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Cache/Cache.php, line 327]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+Cache::write() - CORE/Cake/Cache/Cache.php, line 327
+DboSource::__destruct() - CORE/Cake/Model/Datasource/DboSource.php, line 3704
+[main] - [internal], line ??
+
+2018-03-30 11:43:31 Warning: Warning (2): fopen(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_method_cache) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Utility/File.php, line 136]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+fopen - [internal], line ??
+File::open() - CORE/Cake/Utility/File.php, line 136
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 78
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 11:43:31 Warning: Warning (2): flock() expects parameter 1 to be resource, boolean given in [/var/www/demo.eramba.org/eramba_community/app/Lib/Cache/CacheCleaner.php, line 79]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+flock - [internal], line ??
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 79
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 11:43:31 Warning: Warning (2): flock() expects parameter 1 to be resource, boolean given in [/var/www/demo.eramba.org/eramba_community/app/Lib/Cache/CacheCleaner.php, line 80]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+flock - [internal], line ??
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 80
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 11:43:31 Warning: Warning (2): fopen(/var/www/demo.eramba.org/eramba_community/app/tmp/cache/persistent/eramba_cake_core_file_map) [<a href='http://php.net/function.fopen'>function.fopen</a>]: failed to open stream: Permission denied in [/var/www/demo.eramba.org/eramba_community/lib/Cake/Utility/File.php, line 136]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+fopen - [internal], line ??
+File::open() - CORE/Cake/Utility/File.php, line 136
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 78
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 11:43:31 Warning: Warning (2): flock() expects parameter 1 to be resource, boolean given in [/var/www/demo.eramba.org/eramba_community/app/Lib/Cache/CacheCleaner.php, line 79]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+flock - [internal], line ??
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 79
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+
+2018-03-30 11:43:31 Warning: Warning (2): flock() expects parameter 1 to be resource, boolean given in [/var/www/demo.eramba.org/eramba_community/app/Lib/Cache/CacheCleaner.php, line 80]
+Trace:
+ErrorHandler::handleError() - CORE/Cake/Error/ErrorHandler.php, line 230
+flock - [internal], line ??
+CacheCleaner::deleteFile() - APP/Lib/Cache/CacheCleaner.php, line 80
+CacheCleaner::deleteCache() - APP/Lib/Cache/CacheCleaner.php, line 42
+Setting::deleteCache() - APP/Model/Setting.php, line 228
+SettingsController::deleteCache() - APP/Controller/SettingsController.php, line 425
+ReflectionMethod::invokeArgs() - [internal], line ??
+Controller::invokeAction() - CORE/Cake/Controller/Controller.php, line 491
+AppController::invokeAction() - APP/Plugin/Crud/Lib/CrudControllerTrait.php, line 31
+Dispatcher::_invoke() - CORE/Cake/Routing/Dispatcher.php, line 193
+Dispatcher::dispatch() - CORE/Cake/Routing/Dispatcher.php, line 167
+[main] - APP/webroot/index.php, line 109
+

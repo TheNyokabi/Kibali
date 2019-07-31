@@ -1,0 +1,11 @@
+.menu-item-enterprise {
+	padding-right: 65px;
+}
+.menu-item-enterprise > a::after {
+	content: "enterprise";
+    position: absolute;
+    right: 10px;
+    top: 14px;
+    font-size: 0.8em;
+	color: #b94a48;
+}

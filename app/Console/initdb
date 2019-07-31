@@ -1,0 +1,56 @@
+#!/bin/bash
+echo $1
+if [[ $1 = '-n' ]]
+then
+	response=y
+	response2=y
+	response3=y
+else
+	read -p "Drop all tables? (yes) " response
+	response=${response:-y}
+	read -p "Seed demo data? (yes) " response2
+	response2=${response2:-y}
+	read -p "Initialize Dashboards [might take a while]? (yes) " response3
+	response3=${response3:-y}
+fi
+
+if [[ $response =~ ^(yes|y)$ ]]
+then
+	echo "------"
+	echo "------"
+	echo "Dropping all tables..."
+	echo "------"
+	Console/cake update drop_tables
+	echo "Tables dropped."
+	echo ""
+fi
+
+echo "------"
+echo "------"
+echo "Running composer install in /upgrade folder..."
+echo "------"
+composer update -n -d upgrade/
+echo "Composer Install completed."
+echo ""
+
+echo "------"
+echo "------"
+echo "Running DB Migrations (with --no-lock)..."
+echo "------"
+# Console/cake3 migrations migrate --no-lock
+Console/cake system migrate_db
+echo "DB Migrations completed."
+echo ""
+
+if [[ $response2 =~ ^(yes|y)$ ]]
+then
+	Console/cake3 migrations seed --seed=DemoSeed
+fi
+
+echo "------"
+echo "------"
+echo "Syncing DB..."
+echo "------"
+Console/dbsync $response3
+echo "DB Sync completed."
+echo ""

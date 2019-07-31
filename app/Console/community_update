@@ -1,0 +1,5 @@
+#!/bin/bash
+Console/cake3 migrations migrate --source=Community --no-lock
+Console/cake community update
+Console/dbsync
+php upgrade/composer.phar update --no-dev -n -d upgrade/

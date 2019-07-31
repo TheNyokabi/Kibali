@@ -1,0 +1,5 @@
+1.0.1
+	- Adjusted API security settings to not black-hole POST and PUT requests while debug mode is disabled
+
+1.0.0
+	- Initial release

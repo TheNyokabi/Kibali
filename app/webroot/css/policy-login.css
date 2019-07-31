@@ -1,0 +1,167 @@
+body {
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 16px;
+    line-height: 24px;
+    color: #84898d;
+}
+
+.table-responsive {
+    margin-bottom: 0;
+    border: none;
+}
+
+.bold {
+    font-weight: 700;
+}
+
+body .container {
+    max-width: 970px;
+}
+a.btn,
+#login-box form .submit button  {
+    white-space: normal;
+    background: #ccc;
+    color: #ffffff;
+    border: none;
+    text-align: center;
+    padding: 10px 40px;
+    font-weight: 700;
+    font-size: 0.9em;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    -khtml-border-radius: 5px;
+    border-radius: 5px;
+
+    -webkit-transition: all 100ms ease-in-out;
+    -moz-transition: all 100ms ease-in-out;
+    -o-transition: all 100ms ease-in-out;
+    transition: all 100ms ease-in-out;
+}
+
+#login .header {
+    padding: 45px 0;
+}
+#login .header .logo-wrapper {
+    float: left;
+    margin-right: 20px;
+}
+#login .header .text-wrapper {
+    font-family: 'Montserrat', sans-serif;
+}
+#login .header .text-wrapper h1 {
+    color: #39414a;
+    font-size: 1.9em;
+}
+#login .header .text-wrapper .desc {
+    font-size: 1.1em;
+}
+
+#login-box {
+	background: #e6eaed;
+    max-width: 450px;
+    margin: 0 auto;
+    padding: 35px 0;
+}
+#login-box h2 {
+    font-family: 'Montserrat', sans-serif;
+    margin: 0 0 35px;
+    text-align: center;
+    color: #39414a;
+    font-size: 1.2em;
+    font-weight: 400;
+}
+#login-box form {
+    width: 310px;
+    margin: 0 auto;
+}
+#login-box form .input.text,
+#login-box form .input.email,
+#login-box form .input.password {
+    width: 100%;
+}
+#login-box form .input.text label,
+#login-box form .input.email label,
+#login-box form .input.password label {
+    color: #646d78;
+}
+#login-box form .input.text input,
+#login-box form .input.email input,
+#login-box form .input.password input {
+    width: 100%;
+    height: 50px;
+    background: #f5f7f8;
+    border: 1px solid #bcc8d0;
+    color: #646d78;
+    padding: 10px 15px;
+    margin: 0 0 15px;
+}
+#login-box form .submit {
+ 	width: 100%;
+}
+#login-box form .submit button {
+    background: #e85a5a;
+    width: 100%;
+    margin: 25px 0 65px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+}
+#login-box .desc {
+    text-align: center;
+	position: relative;
+    /*height: 25px;*/
+    margin: 0 0 45px;
+}
+#login-box .desc .line {
+    border-bottom: 1px solid #c8cfd4;
+    position: absolute;
+    height: 1px;
+    width: 100%;
+    top: 12px;
+}
+#login-box .desc .text {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+    color: #39414a;
+    font-size: 1.2em;
+    font-weight: 400;
+    display: inline-block;
+    background: #e6eaed;
+    z-index: 9999;
+    position: relative;
+    /*left: 27%;*/
+    padding: 0 25px;
+}
+#login-box .guest {
+	margin: 0 auto;
+    text-align: center;
+}
+#login-box .guest a {
+	background: #e85a5a;
+	font-family: 'Montserrat', sans-serif;
+    font-size: 1.1em;
+    font-weight: 300;
+    width: 310px;
+}
+
+#login .copyright-text {
+	color: #646d78;
+    font-size: 0.85em;
+    text-align: center;
+    padding-bottom: 60px;
+    margin: 45px 0 0;
+    border-bottom: 1px solid #e4e4e4;
+}
+
+#login .bottom-text {
+    padding: 15px 0 25px;
+}
+#login .bottom-text .title {
+    color: #84898d;
+    font-size: 0.8em;
+    font-weight: 700;
+}
+#login .bottom-text p {
+    font-size: 0.8em;
+    line-height: 1.5em;
+}
